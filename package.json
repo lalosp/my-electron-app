@@ -4,8 +4,10 @@
   "description": "I'm following the instructions on \"https://www.electronjs.org/docs/tutorial/quick-start\" to learn how to develop desktop apps using web technologies and learn general web-dev and desktop dev at the same time.",
   "main": "main.js",
   "scripts": {
-  	"start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "homepage": "https://github.com/lalosp/my-electron-app#readme",
   "devDependencies": {
     "electron": "^10.1.5"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
